@@ -19,8 +19,21 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {view:'pages/index'},
+  /*'/': {view:'pages/index'},
   '/homepage': { view: 'pages/homepage' },
+  '/test': {action:'Test/index'},
+  '/test2': { view: 'pages/test' },*/
+  /*'/': {
+    action:'Home/index'
+  },
+
+  'POST /home/test': {
+    action:'Home/test'
+  },*/
+
+  '/': {action: 'home'},
+  '/menu': {action: 'menu'},
+
 
 
   /***************************************************************************
