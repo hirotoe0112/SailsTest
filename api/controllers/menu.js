@@ -8,7 +8,10 @@ module.exports = {
 
 
   inputs: {
-
+    username:{
+      type: 'string',
+      required: false
+    }
   },
 
 
@@ -21,7 +24,12 @@ module.exports = {
   },
 
 
-  fn: async function (inputs) {
+  fn: async function ({username}) {
+
+    console.log(username);
+    if(!username){
+      username = 'ゲスト';
+    }
 
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
@@ -30,7 +38,8 @@ module.exports = {
 
     // All done.
     return{
-      day: currentYear + '/' + currentMonth + '/' + currentDay
+      day: currentYear + '/' + currentMonth + '/' + currentDay,
+      username: username
     };
 
   }
