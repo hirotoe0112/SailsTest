@@ -34,6 +34,7 @@ module.exports.routes = {
   '/': {action: 'home'},
   '/menu': {action: 'menu'},
   '/menu2': {action: 'menu'},
+  '/key' :{action: 'key'}
 
 
 
