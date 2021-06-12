@@ -1,4 +1,3 @@
-const keylist = require('../../assets/js/keylist');
 module.exports = {
 
 
@@ -22,6 +21,7 @@ module.exports = {
 
   fn: async function (inputs) {
 
+    const keylist = require('../../assets/js/keylist');
     //keyの数を取得
     const keycount = Object.keys(keylist['key']).length;
     //ランダムな値を取得

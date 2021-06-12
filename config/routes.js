@@ -31,10 +31,18 @@ module.exports.routes = {
     action:'Home/test'
   },*/
 
-  '/': {action: 'home'},
-  '/menu': {action: 'menu'},
-  '/menu2': {action: 'menu'},
-  '/key' :{action: 'key'}
+  '/': {
+    action: 'home'
+  },
+  '/menu': {
+    action: 'menu'
+  },
+  '/menu2': {
+    action: 'menu'
+  },
+  '/key' :{
+    action: 'key'
+  }
 
 
 
