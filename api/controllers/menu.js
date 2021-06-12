@@ -26,7 +26,7 @@ module.exports = {
 
   fn: async function ({username}) {
 
-    console.log(username);
+    //console.log(username);
     if(!username){
       username = 'ゲスト';
     }
